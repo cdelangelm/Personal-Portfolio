@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio-page",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Project for freecodecamp's Responsive Web Design Certification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdelangelm/PersonalPortfolio-freecodecamp.git"
+  },
+  "author": "Carlos Enrique del Angel Muñoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdelangelm/PersonalPortfolio-freecodecamp/issues"
+  },
+  "homepage": "https://github.com/cdelangelm/PersonalPortfolio-freecodecamp#readme"
+}

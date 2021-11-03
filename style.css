@@ -1,0 +1,104 @@
+:root {
+    --almost-gold: #ebc42a;
+    --almost-white: #f1f1f1;
+    --almost-black: #1c1c1c;
+    --almost-grey: #777777;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--almost-black);
+    background-color: var(--almost-white);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container-xs {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (min-width: 1200px) {
+    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container-xs {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xs {
+        max-width: 960px;
+    }
+    .nav-bar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm, .container-xs {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .container, .container-sm, .container-xs {
+        max-width: 540px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    justify-content: space-between;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--almost-gold);
+    color: var(--almost-black);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+.align-items-left {
+    align-items: flex-start !important;
+}
+.align-items-right {
+    align-items: flex-end !important;
+}
