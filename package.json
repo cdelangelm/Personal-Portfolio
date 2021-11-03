@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cdelangelm/PersonalPortfolio-freecodecamp.git"
+    "url": "git+https://github.com/cdelangelm/Personal-Portfolio.git"
   },
   "author": "Carlos Enrique del Angel Muñoz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cdelangelm/PersonalPortfolio-freecodecamp/issues"
+    "url": "https://github.com/cdelangelm/Personal-Portfolio/issues"
   },
-  "homepage": "https://github.com/cdelangelm/PersonalPortfolio-freecodecamp#readme"
+  "homepage": "https://github.com/cdelangelm/Personal-Portfolio#readme"
 }
