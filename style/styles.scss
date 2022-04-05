@@ -83,6 +83,19 @@ section {
     transform: translateY(0) scale(1);
 }
 
+.active {
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    @keyframes scaleAnim {
+        0% {
+            transform: translateY(-100%) scaleY(0);
+        }
+        100% {
+            transform: translateY(0) scaleY(1);
+        }
+    }
+}
+
 // Controls
 .controls {
     position: fixed;
@@ -94,6 +107,13 @@ section {
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    .active-btn {
+        background-color: var(--tertiary-color) !important;
+        transition: all 0.3s ease-in-out;
+        i {
+            color: var(--white-color) !important;
+        }
+    }
     .control {
         padding: 1rem;
         cursor: pointer;
@@ -111,5 +131,82 @@ section {
             color: var(--gray-color1);
             pointer-events: none;
         }
+    }
+}
+
+// Header content
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    .left-header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .image {
+            border-radius: var(--br-sm-2);
+            height: 35%;
+            width: 95%;
+            margin-left: 1rem;
+            background-color: var(--tertiary-color);
+            transition: all .4s ease-in-out;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            img {
+                width: 91.5%;
+                height: 91.5%;
+                position: relative;
+                object-fit: cover;
+                transition: all .4s ease-in-out;
+                border-radius: var(--br-sm-2);
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .right-header {
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 8rem;
+        .name {
+            font-size: 3rem;
+            span {
+                color: var(--secondary-color);
+            }
+        }
+        p {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+        }
+    }
+}
+
+.main-btn {
+    border: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .btn-text {
+        padding: 0 2rem;
+    }
+    .btn-icon {
+        background-color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 1rem;
     }
 }

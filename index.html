@@ -12,18 +12,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="main-content">
-    <header class="section sec1 eader active">
-        <i class="fab fa-instagram"></i>
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="image">
+                    <img id="logo" src="images/logoTemporal-v2.2-slogan.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Somos <span class="name">Tecnologías DAM.</span>
+                    Nos especializamos en <span class="name">desarrollo web</span>.
+                </h1>
+                <p>
+                    Somos una empresa dedicada a la creación de sitios web, diseño y desarrollo de aplicaciones web,
+                    con el objetivo de satisfacer las necesidades de nuestros clientes.
+                    Si buscas darle a tu negocio un nuevo aspecto, nosotros te ayudamos.
+                </p>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 portfolio"></section>
-        <section class="section sec4 blogs"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 portfolio" id="portfolio"></section>
+        <section class="section sec4 blogs" id="blogs"></section>
+         <section class="section sec5 contact" id="contact"></section>
     </main>
 
     <div class="controls">
-        <div class="control control-1 active-btn" data-id="header">
+        <div class="control control-1 active-btn" data-id="home">
             <i class="fas fa-home"></i>
         </div>
         <div class="control control-2" data-id="about">
@@ -39,5 +56,7 @@
             <i class="fas fa-envelope"></i>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
