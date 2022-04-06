@@ -267,11 +267,13 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
 
 .about-container .right-about {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -335,6 +337,7 @@ section {
 
 .about-container .left-about {
   padding-right: 5rem;
+  width: 100%;
 }
 
 .about-container .left-about p {
@@ -354,6 +357,9 @@ section {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  width: 144.5%;
+  position: relative;
+  top: 3rem;
 }
 
 .about-container .about-techs .about-techs-item {
@@ -375,7 +381,14 @@ section {
 }
 
 .about-container .about-techs .about-techs-item .tech-icon {
-  color: var(--gray-color6);
+  position: relative;
+  top: 8px;
+  left: 8px;
+  color: var(--tertiary-color);
+}
+
+.about-container .about-techs .about-techs-item .tech-icon i {
+  font-size: 1.5rem;
 }
 
 .about-container .about-techs .about-techs-item .tech-text {
